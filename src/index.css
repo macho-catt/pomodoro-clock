@@ -1,0 +1,102 @@
+body{
+  background-color: #7ed67e;
+}
+
+#container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#clock-container{
+  display: grid;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  grid-template-columns: 60px 10px 60px;
+  height: 200px;
+  grid-template-rows: 30px 30px 80px;
+  grid-template-areas:
+  "title title title"
+  "break-container . session-container"
+  "time-container time-container time-container";
+}
+
+#title{
+  grid-area: title;
+  justify-self: center;
+  align-self: end;
+}
+
+.length-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.length-control{
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+  font-weight: bold;
+}
+
+#break-container{
+  grid-area: break-container; 
+}
+
+#break-label{
+  font-size: 8px;
+}
+
+#session-container{
+  grid-area: session-container;
+}
+
+#session-label{
+  font-size: 8px;
+}
+
+#time-container{
+  display:grid;
+  grid-area: time-container;
+  grid-template-rows: 50px 30px;
+  grid-template-areas: 
+  "timer timer timer"
+  "time-control time-control time-control";
+}
+
+#timer{
+  grid-area: timer;
+  place-self: center;
+  border: solid;
+  border-radius: 20%;
+  border-width: 2px;
+  border-color: #103210;
+  height: 40px;
+  width: 75px;
+}
+
+#timer-label{
+  font-size: 8px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#timer-left{
+  font-size: 20px;
+  text-align: center;
+}
+
+/* .alert-color{
+  color: #c34242;
+} */
+
+#time-control{
+  grid-area: time-control;
+  display: flex;
+  justify-content: center;
+  font-size: 7px;
+}
