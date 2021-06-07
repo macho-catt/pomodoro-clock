@@ -90,13 +90,22 @@ body{
   text-align: center;
 }
 
-/* .alert-color{
+.alert-color{
   color: #c34242;
-} */
+}
+
+.normal-color{
+  color: black;
+}
 
 #time-control{
   grid-area: time-control;
   display: flex;
   justify-content: center;
   font-size: 7px;
+}
+
+#pause{
+  margin-right: 3px;
+  margin-left: 3px;
 }
